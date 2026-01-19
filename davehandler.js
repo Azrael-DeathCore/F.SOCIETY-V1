@@ -803,7 +803,7 @@ return plugins
 }
 //========= [ COMMANDS PLUGINS ] =================================================
 let pluginsDisable = true
-const plugins = await pluginsLoader(path.resolve(__dirname, "trashplugs"))
+const plugins = await pluginsLoader(path.resolve(__dirname, "daveplugs"))
 const trashdex = { trashown, reply,replymenu,command,isCmd, text, botNumber, prefix, reply,fetchJson,example, totalfeature,davetech,m,q,mime,sleep,fkontak,addPremiumUser, args,delPremiumUser,isPremium,trashpic,trashdebug,sleep,isAdmins,groupAdmins,isBotAdmins,quoted,from,groupMetadata,downloadAndSaveMediaMessage,heaven,menu,loading,quotedMessage}
 for (let plugin of plugins) {
 if (plugin.command.find(e => e == command.toLowerCase())) {
